@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: Simonetta, "Patua One", Courier, "Courier New";;
+  font-weight: 600;
+}
+
 #nav {
   background-color: #888;
   height: 125px;
@@ -13,10 +18,19 @@
 
 .menu-item {
   float: left;
+  margin-top: 10px;
   margin-right: 20px;
   height: 100px;
+  line-height: 100px;
   width: 150px;
+  color: #fff;
   background-color: #585858;
+  text-align: center;
+  font-size: 22px;
+}
+
+.menu-item:before {
+  content: "Nav Item";
 }
 
 #blog-container {
@@ -33,9 +47,17 @@
   left: 390px;
   width: 345px;
   height: 50px;
+  line-height: 50px;
   overflow: hidden;
   border: 1px solid black;
+  color: #fff;
   background-color: #000;
+  text-align: center;
+  font-size: 26px;
+}
+
+#grabber-top:before {
+  content: "Look Here Look Here";
 }
 
 #grabber-bottom {
@@ -44,9 +66,17 @@
   left: 490px;
   width: 145px;
   height: 50px;
+  line-height: 50px;
   overflow: hidden;
   border: 1px solid black;
+  color: #fff;
   background-color: #000;
+  text-align: center;
+  font-size: 26px;
+}
+
+#grabber-bottom:before {
+  content: "Look Here";
 }
 
 div[class$="-blog"] {
@@ -70,6 +100,13 @@ div[class$="-blog"] {
   top: 200px;
   width: 300px;
   height: 50px;
+  line-height: 50px;
+  color: #fff;
+  text-align: center;
+}
+
+.author:before {
+  content: "Author McAuthor";
 }
 
 .blog-title {
@@ -77,6 +114,13 @@ div[class$="-blog"] {
   top: 225px;
   width: 400px;
   height: 200px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.blog-title:before {
+  content: "The Main Title: This is a subtitle for the title";
 }
 
 .comment-link {
@@ -84,6 +128,14 @@ div[class$="-blog"] {
   top: 250px;
   width: 100px;
   height: 25px;
+  line-height: 25px;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+}
+
+.comment-link:before {
+  content: "comments";
 }
 
 .other-links {
@@ -91,6 +143,14 @@ div[class$="-blog"] {
   top: 275px;
   width: 400px;
   height: 25px;
+  line-height: 25px;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+}
+
+.other-links:before {
+  content: "This is where links would go";
 }
 
 .bottom-blog .author {
